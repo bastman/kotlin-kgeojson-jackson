@@ -1,6 +1,11 @@
 # kotlin-kgeojson-jackson
 A kotlin showcase. How to json encode/decode geojson datastructures using jackson.
 
+## showcases ...
+
+    - sealed data class hierachies
+    - jackson module kotlin (see: examples)
+    - jackson dynamic deserialization into sealed (abstract) classes, aka: Jackson SubTypes
 
 ## geojson
 
