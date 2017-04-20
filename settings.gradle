@@ -1,0 +1,4 @@
+rootProject.name = 'kotlin-kgeojson-jackson'
+include 'kgeojson'
+include 'examples'
+

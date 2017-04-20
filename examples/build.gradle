@@ -1,0 +1,6 @@
+
+
+dependencies {
+    compile project(':kgeojson')
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}

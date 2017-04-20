@@ -1,0 +1,38 @@
+group 'com.bastman.kotlin-kgeojson-jackson'
+version '1.0-SNAPSHOT'
+
+buildscript {
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+
+
+subprojects {
+    apply plugin: 'kotlin'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        // jackson
+        compile("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
+        compile("com.fasterxml.jackson.module:jackson-module-parameter-names:$jacksonVersion")
+
+        compile("com.fasterxml.jackson.datatype:jackson-datatype-jdk8:$jacksonVersion")
+        compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
+        compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr353:$jacksonVersion")
+
+    }
+
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.5'
+}
+
+
